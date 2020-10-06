@@ -1,0 +1,91 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('Images\iphone-160307.png');
+    background-color: rgb(250, 250, 250);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+   
+}
+.container_imgs{
+    padding: 7%;
+    padding-right: 3mm;
+}
+.container_ticket{
+    display: block;
+    padding: 7%;
+    padding-left: 4mm;
+    width: 260px;
+    justify-content: space-around;
+}
+
+.container-d {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 10mm;
+    padding-top: 4mm;
+    margin: 1mm;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    border-radius: 2px;
+    
+     
+}
+
+.container-d > img{
+    height: 80px;
+    padding: 0mm;
+}
+
+.Login > form > input{
+    margin-bottom: 1.5mm;
+    width: 100%;
+    height: 9mm;
+    background-color: rgb(250, 250, 250);
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    
+
+}
+
+.Login > button {
+    margin-top: 2mm;
+    margin-bottom: 4mm;
+    width: 102.5%;
+    background-color: rgb(175, 220, 249);
+    border-radius: 1px;
+    border-width: 0;
+    font-family: inherit;
+    font-size: 14px;
+    color: white;
+    height: 9mm;
+    font-weight: bold;
+}
+
+
+.apps{
+    display: block;       
+    text-align: center;
+    width: 60%;
+    min-width: 300px;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > a > img {
+    height: 20px;
+}
