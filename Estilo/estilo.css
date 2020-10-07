@@ -1,34 +1,61 @@
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('Images\iphone-160307.png');
+body{
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     background-color: rgb(250, 250, 250);
     margin: 0;
     padding: 0;
+}
+#corpo{
     display: flex;
     justify-content: center;
-    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-   
+    font-family: inherit;
 }
-.container_imgs{
-    padding: 7%;
+
+#container_imgs{
+    display: flex;
+    justify-content: flex-end;
+    font-family: inherit;
+    padding: 0;
+    padding-top: 27mm;
+    padding-bottom: 0;
     padding-right: 3mm;
+    width: 50%;
+
 }
-.container_ticket{
-    display: block;
-    padding: 7%;
-    padding-left: 4mm;
-    width: 260px;
-    justify-content: space-around;
+
+#imagem_alterar{
+    position: relative;
+    top:  120px;
+    left: -35px;
+    
+}
+#imagem_alterar > img{
+    height: 380px;
+    width: 255px;
+}
+
+.cell {
+    position: relative;
+    left:240px;
+    }
+
+#container_ticket{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25mm;
+    padding-bottom: 0;
+    padding-left: 3mm;
 }
 
 .container-d {
     display: inline-block;
-    width: 100%;
+    width: 285px;
     text-align: center;
     background: white;
-    padding: 10mm;
-    padding-top: 4mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    padding-top: 0mm;
+    padding-bottom:  0mm;
     margin: 1mm;
     border-width: 1px;
     border-style: solid;
@@ -38,30 +65,35 @@ body {
      
 }
 
-.container-d > img{
-    height: 80px;
-    padding: 0mm;
+#cadastro{
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
 }
 
-.Login > form > input{
+#login > img{
+    height: 80px;
+    padding-top: 8mm;
+}
+
+
+#login_email > form > input{
     margin-bottom: 1.5mm;
     width: 100%;
     height: 9mm;
     background-color: rgb(250, 250, 250);
-    border-radius: 1px;
+    border-radius: 5px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(190, 190, 190);
-    
-
+    border-color: rgb(190, 190, 190); 
 }
 
-.Login > button {
+#login_email > button {
     margin-top: 2mm;
     margin-bottom: 4mm;
     width: 102.5%;
     background-color: rgb(175, 220, 249);
-    border-radius: 1px;
+    border-radius: 5px;
     border-width: 0;
     font-family: inherit;
     font-size: 14px;
@@ -70,22 +102,152 @@ body {
     font-weight: bold;
 }
 
-
-.apps{
-    display: block;       
-    text-align: center;
-    width: 60%;
-    min-width: 300px;
-
-}
-
-
-nav {
-    display: flex;
+#opcao{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-nav > a > img {
-    height: 20px;
+#opcao > p{
+    padding: 0;
+    margin: 2mm;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    color:rgb(134, 133, 133);
+}
+
+#opcao > img{
+    height: 0.05mm;
+    width: 28mm;
+    justify-content: center;
+}
+
+
+#login_facebook{
+    padding: 0;
+    margin: 5mm;
+
+}
+
+#login_facebook > a{
+    font-family: inherit;
+    font-size: 15px;
+    height: 9mm;
+    font-weight: bold;
+    color:rgb(88, 90, 216);
+    text-decoration: none;
+}
+
+#login_facebook > img{
+    height: 4mm;
+}
+
+#login > footer{
+    padding: 0;
+    margin: 5mm;
+}
+
+#login > footer >a{
+    font-family: inherit;
+    font-size: 13px;
+    color:rgb(88, 90, 216);
+    text-decoration: none;
+}
+
+#cadatro{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cadastro >p{
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#cadastro > a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color:rgb(102, 104, 224);
+}
+
+
+#apps{
+    width: 285px;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    display: inline-block; 
+    justify-content: center;      
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+
+#apps >nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#apps > nav > a > img {
+    height: 12mm;
+}
+
+#rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0mm;
+    padding-top: 30mm;
+    padding-bottom: 10mm;
+}
+#rodape >nav {
+    justify-content: space-between;
+}
+#rodape >nav >a{
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(88, 90, 216);
+    text-decoration: none;
+    padding: 3mm;
+    margin: 3mm;
+    text-align: center;
+}
+
+/* media query */
+
+@media (max-width: 875px) {
+    #container_imgs{
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+ 
+    #container_ticket{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:410px){
+    #container_ticket{
+        padding-top: 0mm;
+    }
+    .container-d {
+        width: 285px;
+        background: none;
+        border: 0mm;
+    }
 }

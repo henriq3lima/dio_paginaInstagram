@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="latin1">
+    <meta charset="utf-8">
     <title>Instagram</title>
     <link rel = "icon" href = "Images\instagram_log.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="Estilo\estilo.css">
+    <script src="js\init.js"  ></script>
+
 </head>
 <body>
-    <div class="container_imgs">
-        <img src="Images\cont_insta1.jpg" alt="Page_instagram">   
-    </div>
-    <div class="container_ticket">
-        <section class="container-d">
-            <img src="Images\instagram-1594387_1280.png" alt="logInsta">
-            <div class="Login">
-                <form type="submit">
-                    <input type="text" value="Telefone, nome de usuário ou telefone">
-                    <input type="text"value="Senha">
-                </form>
-                <button>Entrar</button>
+    <div id="corpo">
+        <div id="container_imgs">
+            <img src="Images\cells.png" alt="Page_instagram" class="cell">   
+          
+            <div id="imagem_alterar" class="cell">
+                <img id="imagem_alterar_img" src="Images\cont_insta1.jpg">
             </div>
-            <p>ou</p>
-            <a href="#">Entrar com facebook</a>
-            <footer>
-                <a href="#">esqueceu a senha</a>
-            </footer>            
-        </section>
-        <section class="container-d">
-            <div>
-                <p>Não tem uma conta?</p><a href="#">Cadastre-se</a>
-            </div>
-            
-        </section>
-        <section class="apps">
-            <p>Obtenha o aplicativo.</p>
-            <nav>
-                <a href="#">
-                    <img src="Images\2f2a0c05b2f3.png" alt="">
-                </a><a href="#">
-                    <img src="Images\68006a2bb372.png" alt="">
-                </a>
-            </nav>
-        </section>
+        </div>
+        <div id="container_ticket">
+            <section id= "login" class="container-d">
+                <img src="Images\instagram-1594387_1280.png" alt="logInsta">
+                <section id="login_email">
+                    <form type="submit">
+                        <input type="text" value="Telefone, nome de usuário ou telefone">
+                        <input type="text"value="Senha">
+                    </form>
+                </section>
+                <div id="opcao">
+                    <img src="Images\linha.png">
+                    <p>ou</p>
+                    <img src="Images\linha.png">
+                </div>
+                <section id="login_facebook">
+                    <img src="Images\log_face.png" alt="log_face">
+                    <a href="#">Entrar com Facebook</a>
+                </section>
+                <footer id="recuperar">
+                    <a href="#">Esqueceu a senha?</a>
+                </footer>            
+            </section>
+            <section class="container-d">
+                <div id="cadastro">
+                    <p>Não tem uma conta?</p>
+                    <a href="#">Cadastre-se</a>
+                </div> 
+                
+            </section>
+            <section id="apps">
+                <p>Obtenha o aplicativo.</p>
+                <nav>
+                    <a href="#">
+                        <img src="Images\68006a2bb372.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="Images\2f2a0c05b2f3.png" alt="">
+                    </a>
+                </nav>
+            </section>
+        </div>
     </div>
+    <footer id="rodape">
+        <nav>
+            <a href="#">SOBRE</a>
+            <a href="#">AJUDA</a>
+            <a href="#">IMPRENSA</a>
+            <a href="#">API</a>
+            <a href="#">CARREIRAS</a>
+            <a href="#">PRIVACIDADE</a>
+            <a href="#">TERMOS</a>
+            <a href="#">LOCALIZAÇÕES</a>
+            <a href="#">CONTAS MAIS RELEVANTES</a>
+            <a href="#">HASTAGS</a>
+            <a href="#">IDIOMA</a>
+        </nav>
+    </footer>
     
 </body>
 </html>
